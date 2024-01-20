@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<form name="mainForm" onsubmit="return false">
+    <fieldset>
+        <legend>User Type</legend>
+        <button id="newUserButton">Click for New User</button>
+        <button id="existingUserButton">Click for Existing User</button>
+    </fieldset>
+
+    <fieldset id="newUserSection" class="disabled">
+        <legend>New User Information</legend>
+        <label for="newUsername">Username:</label>
+        <input type="text" id="newUsername">
+        <br>
+        <label for="newPassword">Password:</label>
+        <input type="password" id="newPassword">
+        <br>
+        <label for="newCity">City:</label>
+        <input type="text" id="newCity">
+        <br>
+        <label for="newState">State:</label>
+        <input type="text" id="newState">
+        <br>
+        <button onclick="newUserLogin()">Login</button>
+    </fieldset>
+
+    <fieldset id="existingUserSection" class="disabled">
+        <legend>Existing User Information</legend>
+        <label for="existingUsername">Username:</label>
+        <input type="text" id="existingUsername">
+        <br>
+        <label for="existingPassword">Password:</label>
+        <input type="password" id="existingPassword">
+        <br>
+        <button onclick="existingUserLogin()">Login</button>
+    </fieldset>
+</form>
+
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* CSS styling with colors */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 2px solid #555; /* Dark gray border */
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff; /* White background */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50; /* Green button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.disabled {
+    opacity: 0.6;
+}
+
+/* Additional styling for legends */
+legend {
+    font-weight: bold;
+    color: #333; /* Dark gray text */
+}
